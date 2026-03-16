@@ -1,0 +1,190 @@
+/* CONFIGURAÇÕES GERAIS E RESET */
+html { scroll-behavior: smooth; }
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Arial Black', Gadget, sans-serif; }
+body { background-color: #f4f4f4; overflow-x: hidden; }
+
+/* ESTRUTURA DE SEÇÃO */
+#pagamento-section {
+    width: 100%; 
+    min-height: 100vh; 
+    background-color: #d4a031;
+    display: flex; 
+    flex-direction: column; 
+    position: relative;
+    border-bottom: 40px solid #003366;
+}
+
+/* NAVBAR NO TOPO */
+.header-internal { 
+    display: flex; 
+    padding: 20px 40px; 
+    align-items: flex-start; 
+    width: 100%;
+}
+
+.icon-box-static {
+    background-color: white; 
+    width: 80px; 
+    height: 100px;
+    border-radius: 0 0 15px 15px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+.header-internal h1 { font-size: 2rem; color: white; text-transform: uppercase; margin-left: 15px; }
+
+.icon-car {
+    width: 50px; height: 50px; background-color: #ffcc00;
+    -webkit-mask: url('https://cdn-icons-png.flaticon.com/512/741/741407.png') no-repeat center;
+    mask: url('https://cdn-icons-png.flaticon.com/512/741/741407.png') no-repeat center;
+    mask-size: contain;
+}
+
+/* ÁREA DO CONTEÚDO */
+.area-principal {
+    flex-grow: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.alerta-instrucao {
+    background-color: #003366;
+    color: #ffffff;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    margin-bottom: 20px;
+    text-align: center;
+    max-width: 600px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* CARD DETRAN */
+.card-detran {
+    background: #ffffff;
+    width: 100%;
+    max-width: 650px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    font-family: Arial, sans-serif;
+    margin-bottom: 40px;
+}
+
+.topo-detran {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px;
+    border-bottom: 2px solid #004499;
+    background-color: #f9f9f9;
+}
+
+.logo-detran { height: 35px; }
+
+.titulo-pagamento {
+    color: #004499;
+    font-size: 1rem;
+    text-align: center;
+    margin: 15px 0;
+    font-weight: 900;
+    text-transform: uppercase;
+    padding: 0 10px;
+}
+
+.conteudo-form { padding: 0 25px 25px; }
+
+.secao-dados {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 15px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.secao-dados legend {
+    color: #004499;
+    font-weight: bold;
+    font-size: 0.8rem;
+    padding: 0 10px;
+}
+
+.input-group-detran {
+    margin-bottom: 10px;
+}
+
+.input-group-detran label {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #444;
+    margin-bottom: 4px;
+}
+
+.input-group-detran input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.linha-dado {
+    font-size: 0.85rem;
+    margin-bottom: 6px;
+    color: #444;
+}
+
+.azul-destaque {
+    color: #004499;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* GRID PAGAMENTO */
+.grid-pagamento {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.item-pagamento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #eee;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.75rem;
+    transition: 0.2s;
+    background: #fdfdfd;
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+}
+
+input[type="radio"]:checked + .item-pagamento {
+    border-color: #004499;
+    background-color: #eef5ff;
+}
+
+.btn-confirmar {
+    width: 100%;
+    background-color: #004499;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+.btn-confirmar:hover { background-color: #002d66; }

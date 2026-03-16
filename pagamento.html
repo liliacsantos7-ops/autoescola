@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagamento CNH</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="pagamento.css">
+</head>
+<body>
+
+    <section id="pagamento-section">
+        <header class="header-internal">
+            <div class="icon-box-static">
+                <div class="icon-car"></div>
+            </div>
+            <div class="header-text">
+                <h1>NOSSOS SERVIÇOS</h1>
+                <p>RENOVAÇÃO DE CNH:</p>
+            </div>
+        </header>    
+    
+        <main class="area-principal">
+            <div class="alerta-instrucao">
+                FAÇA O PAGAMENTO, E ESPERE O RESULTADO DA SOLICITAÇÃO PELO SITE DO DETRAN
+            </div>
+    
+            <div class="card-detran">
+                <div class="topo-detran">
+                    <img src="detran.png" alt="Detran" class="logo-detran">
+                    <div class="gov-br">Portal do Governo</div>
+                </div>
+    
+                <h2 class="titulo-pagamento">Pagamento da 2ª Via da CNH</h2>
+    
+                <div class="conteudo-form">
+                    <fieldset class="secao-dados">
+                        <legend>Dados do Solicitante</legend>
+                        <div class="input-group">
+                            <label>CPF:</label>
+                            <input type="text" required>
+                        </div>
+                        <div class="input-group">
+                            <label>RENACH:</label>
+                            <input type="text" required>
+                        </div>
+                        <div class="input-group">
+                            <label>Data de Nascimento:</label>
+                            <input type="text" required>
+                        </div>
+                        <div class="linha-dado" style="margin-top: 15px;">
+                            <strong>Código de Verificação:</strong> 
+                            <span class="captcha">7V8BK</span>
+                            <input type="text" placeholder="Digite o código" class="input-captcha">
+                        </div>
+                    </fieldset>
+    
+                    <fieldset class="secao-dados">
+                        <legend>Detalhes da Solicitação</legend>
+                        <p class="linha-dado"><strong>Serviço:</strong> 2ª Via da CNH</p>
+                        <p class="linha-dado"><strong>Motivo:</strong> Perda do Documento</p>
+                        <p class="linha-dado"><strong>Taxa:</strong> <span class="azul-destaque">R$ 359,55</span></p>
+                        <p class="linha-dado"><strong>Prazo de Entrega:</strong> 7 a 10 dias úteis</p>
+                    </fieldset>
+    
+                    <div class="pagamento-container">
+                        <h3>Escolha a Forma de Pagamento</h3>
+                        <div class="grid-pagamento">
+                            <label class="item-pagamento-label">
+                                <input type="radio" name="metodo" value="card">
+                                <div class="item-pagamento">💳<br>Pagar com Cartão</div>
+                            </label>
+    
+                            <label class="item-pagamento-label">
+                                <input type="radio" name="metodo" value="boleto">
+                                <div class="item-pagamento">📋<br>Gerar Boleto</div>
+                            </label>
+    
+                            <label class="item-pagamento-label">
+                                <input type="radio" name="metodo" value="pix" checked>
+                                <div class="item-pagamento">✨<br>Pagar com PIX</div>
+                            </label>
+    
+                            <label class="item-pagamento-label">
+                                <input type="radio" name="metodo" value="debito">
+                                <div class="item-pagamento">🏦<br>Débito em Conta</div>
+                            </label>
+                        </div>
+                    </div>
+    
+                    <button class="btn-confirmar">Confirmar Pagamento</button>
+                </div>
+            </div>
+        </main>
+    </section>
+
+</body>
+</html>
